@@ -158,8 +158,7 @@ class PiperinGUI:
         # Speech History List
         ttk.Label(right_panel, text="SPEECH HISTORY", font=FONTS["bold"], foreground=DARK_THEME["secondary"]).pack(anchor="w")
         self.history_list = tk.Listbox(right_panel, height=8, bg=DARK_THEME["surface"], fg=DARK_THEME["text"], 
-                                      font=FONTS["main"], borderwidth=0, selectbackground=DARK_THEME["primary"], 
-                                      padx=10, pady=10)
+                                      font=FONTS["main"], borderwidth=0, selectbackground=DARK_THEME["primary"])
         self.history_list.pack(fill="x", pady=(5, 20))
         self.history_list.bind("<Double-Button-1>", self.speak_from_history)
         
